@@ -30,8 +30,12 @@ public:
         switch (nar) {
             case('w'): --y; break;
             case('s'): ++y; break;
+            case('W'): --y; break;
+            case('S'): ++y; break;
             case('a'): --x; break;
             case('d'): ++x; break;
+            case('A'): --x; break;
+            case('D'): ++x; break;
             default: break;
         }
         if (x == ArrX) x = 0;
